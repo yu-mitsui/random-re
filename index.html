@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ランダムジャンプ中...</title>
+  <script>
+    window.onload = function() {
+      const urls = [
+        "https://twitter.com/intent/tweet?text=%E4%BB%8A%E6%97%A5%E3%81%AF%E9%9B%A8%E3%81%A0%E3%81%AD",
+        "https://twitter.com/intent/tweet?text=%23レジェンドスタァ楽曲予想%0A%0A私の予想は%0A仁＝〇〇%0A聖＝〇〇%0A冷＝〇〇%0Aリョウ＝〇〇",
+      ];
+      const randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <p>ランダムにジャンプしています...</p>
+</body>
+</html>
